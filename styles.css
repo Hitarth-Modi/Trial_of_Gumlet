@@ -68,6 +68,7 @@ ul {
 
 .section {
   padding: 60px 20px;
+  scroll-margin-top: 110px;
 }
 
 .section-light {
@@ -267,7 +268,8 @@ li {
 
 .section-heading {
   max-width: 680px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 2.75rem;
+  padding-top: 0.5rem;
   text-align: center;
 }
 
@@ -305,29 +307,11 @@ li {
   width: 100%;
 }
 
-.play-badge {
+.video-frame iframe {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  display: grid;
-  place-items: center;
-  width: 74px;
-  height: 74px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.16);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
-
-.play-icon {
-  width: 0;
-  height: 0;
-  margin-left: 4px;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-left: 18px solid #fff;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .menu-grid,
@@ -523,6 +507,7 @@ li {
 @media (max-width: 760px) {
   .section {
     padding: 30px 20px;
+    scroll-margin-top: 96px;
   }
 
   .navbar {
@@ -588,10 +573,5 @@ li {
 
   .section-heading {
     margin-bottom: 2rem;
-  }
-
-  .play-badge {
-    width: 62px;
-    height: 62px;
   }
 }
